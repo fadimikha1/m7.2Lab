@@ -1,0 +1,80 @@
+body {
+  background-color: #eb0606;
+  color: #333;
+  margin: 0;
+  font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.logo {
+  font-size: 200%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.grid {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+aside {
+  flex: 1;
+  padding: 20px;
+  min-width: 250px;
+}
+
+article {
+  flex: 2;
+  padding: 20px;
+}
+
+
+
+nav {
+  background-color: #0d0101;
+  padding: .5em;
+  text-align: center;
+  display: flex;
+  top: 0;
+  z-index: 1000; /* This was found using a chatgpt prompt to figure out how to keep the nav bar above all items in css */
+  position: sticky;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+
+.photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+display: grid;
+grid-template-columns: repeat(2,1fr); /* This was found using a chatgpt prompt to figure out how to make the photos grid become 2 columns as i was sturggling with this part of the lab*/
+gap: 10px;
+}
+
+.feature {
+    width: 200px;
+    float: right;
+    margin: 10px;
+}
